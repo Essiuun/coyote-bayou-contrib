@@ -97,6 +97,12 @@
 	name = "hand-sewn brahmin leather duster"
 	desc = "A duster made from tanned brahmin hide. It has a thick waxy surface from the processing, making it surprisingly laser resistant. Along the collar reads 'Tu Stultes Es'"
 
+/obj/item/clothing/suit/toggle/labcoat/followers/kit
+	name = "well-kept lab coat"
+	desc = "A worn-down white labcoat with some wiring hanging from the right side.<br>Upon closer inspection, it seems to be quite clean and well-kept. There's a small patch on the right arm, though the first name is too faded to read, but there is a last name. 'Trailsworth'."
+	icon_state = "followers"
+	item_state = "labcoat"
+
 /////////////////////
 ///Loadout Boxes///// See kits.dm, use this model for loadouts that have more than one item per character.
 /////////////////////
@@ -944,6 +950,16 @@
 	new /obj/item/clothing/accessory/bos/seniorscribe(src)
 	new /obj/item/clothing/suit/armor/light/kit/punk/labcoat(src)
 	new /obj/item/card/id/dogtag/radiantflash(src)
+
+/datum/gear/donator/kits/rainbyplays
+	name = "Trailsworth's Stash"
+	path = /obj/item/storage/box/large/custom_kit/rainbyplays
+	ckeywhitelist = list("rainbyplays")
+
+/obj/item/storage/box/large/custom_kit/rainbyplays/PopulateContents()
+	new /obj/item/gun/energy/laser/auto/kit(src)
+	new /obj/item/stock_parts/cell/ammo/ecp(src)
+	new /obj/item/clothing/suit/toggle/labcoat/followers/kit(src)
 
 /datum/gear/donator/kits/risingstarslash
 	name = "Blue's Kit"

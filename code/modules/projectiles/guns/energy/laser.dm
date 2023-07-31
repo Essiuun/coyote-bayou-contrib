@@ -523,6 +523,25 @@
 	)
 	init_recoil = LASER_SMG_RECOIL(1, 1)
 
+/obj/item/gun/energy/laser/auto/kit
+	name = "Compact RCW Rifle"
+	desc = "A seemingly counter-intuitive design at first glance, this gun seems to resemble a compact RCW, with additional barrel length and a stock added on. Too unwieldy to fire one-handed, now."
+	icon = 'icons/fallout/objects/guns/longenergy.dmi'
+	icon_state = "protolaser-longarm-kit"
+	item_state = "protolaser-longarm-kit"
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
+	cell_type = /obj/item/stock_parts/cell/ammo/ecp
+	ammo_type =  list(/obj/item/ammo_casing/energy/laser/autolaser) //5dmg, 0.4 AP, good for fast firings.
+	can_scope = FALSE //It may be longer, but there's still no spot for a scope.
+	weapon_class = WEAPON_CLASS_RIFLE
+	weapon_weight = GUN_TWO_HAND_ONLY
+	init_firemodes = list(
+		/datum/firemode/automatic/rpm300,
+		/datum/firemode/semi_auto/fastest
+	)
+	init_recoil = LASER_AUTORIFLE_RECOIL(1, 1)
 //Ultracite Laser pistol
 /obj/item/gun/energy/laser/ultra_pistol
 	name = "\improper Ultracite laser pistol"
