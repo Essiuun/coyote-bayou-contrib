@@ -240,7 +240,6 @@
 		/obj/item/gun/ballistic/automatic/m1carbine/covcarbine = 2,
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom/m6socom = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil/m3civ = 2, 
-		/obj/item/gun/ballistic/automatic/matildar = 1,
 
 	)
 
